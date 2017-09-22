@@ -21,3 +21,11 @@ inferedArray.append("Tres")
 
 // Specific location 
 inferedArray.insert("four", at: 3)
+
+// Value at index
+var itematIndex = inferedArray[0]	// Returns New
+var itemRange = inferedArray[0...2]	// Returns New, dos, tres 
+
+// Shorthand
+var addtoArray: [Int] = [4,5,6,7]
+addtoArray += [8]
