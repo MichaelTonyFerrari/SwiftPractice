@@ -19,3 +19,31 @@ if firstCondition == true && secondCondition == true{
 	else{
 	print("neither met")
 	}
+
+for i in 1...5{
+	print(i)
+}
+
+var itemarray = ["item1","item2","item3"]
+
+for item in itemarray{
+	print(item)
+}
+
+var levelDict = ["Level1": 1, "Leve2": 2, "Level3": 3]
+
+for(levelName, levelNumber) in levelDict{
+	print("\(levelName) => \(levelNumber))
+}
+
+var firstname = "mike"
+for char in firstname.characters{
+	if char == "i"{
+		continue
+	}else if char == "e"
+	{
+	break
+	}
+
+	print(firstname)
+}
