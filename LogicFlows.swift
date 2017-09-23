@@ -60,3 +60,61 @@ while alive{
 
 	print("hes still alive")
 }
+
+// Switch statement 
+var myLives = 9
+
+switch myLives{
+	case 1:
+		print("Need to be careful")
+	case 2...5:
+		print("take risks")
+	// 6-8
+	case 6..<9:
+		print("Im comfy")
+	case 9:
+		print("fully loaded")
+	case default: 
+		print("Lots of risks!")
+}
+
+var compoundCasecheck = "h"
+
+switch compoundCasecheck{
+	case "h", "H":
+		print("Hit!")
+	default:
+		print("no match :( ")
+}
+
+// tuple example 
+
+var tupEx = ("Mike", 23)
+
+switch tupEx{
+	case ("Mike", 20)
+		print("Not it")
+	case ("Mike", 23)
+		print("got one!")
+
+	default:
+		print("Nothing here") 
+}
+
+enum PlayerState{
+	
+	case Alive
+	case dead(restartlevel: Int)
+
+	var message: String{
+		switch self{
+		case .Alive:
+			return "Phew im still alive!"
+		case .dead(let restartLevel): 
+			return "Back to \(restartlevel)"
+		}
+	}
+}
+
+var player1State = PlayerState.dead(restartlevel: 1)
+player1State.message	// back to 1 
