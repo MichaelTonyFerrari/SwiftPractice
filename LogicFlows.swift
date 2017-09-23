@@ -47,3 +47,16 @@ for char in firstname.characters{
 
 	print(firstname)
 }
+
+
+var alive = true
+var playerLives = 5 
+
+while alive{
+	playerLives -=1
+
+	if playerLives <=0 
+		alive = false 
+
+	print("hes still alive")
+}
