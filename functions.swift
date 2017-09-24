@@ -52,3 +52,33 @@ func functionasparamater(hellofunc: (String) -> String, name: String){
 }
 
 functionasparamater(hellofunc: hello, name: "mikey")
+
+// Understanding closures 
+
+//take nothing return void
+var closureDelcation: () -> () = {} 
+
+var basicclosure = { (stringParamater: String -> Void) 
+	in
+	print(stringParamater)
+	
+}
+
+var shorthandclosure: (String) -> String{
+	message in
+	return "\(message) swift!"
+}
+
+
+basicclosure("hello friends of swift")
+shorthandclosure("Hello")
+
+
+func closureasparamater(closure: (String) -> Void){
+	closure("Closure paramater")
+}
+
+closureasparamater{
+	message() in
+	print(message)
+}
