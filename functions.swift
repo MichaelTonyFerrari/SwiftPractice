@@ -82,3 +82,26 @@ closureasparamater{
 	message() in
 	print(message)
 }
+
+
+// type alaising 
+
+typealias Simplealias = (Int, String, Bool)
+typealias closureAlias = (String) -> Void
+
+func returnSimplealias -> Simplealias{
+	return (5, "ten", false)
+
+}
+
+var aliasoutput = returnSimplealias()
+print(aliasoutput)
+
+func aliasasparm(closurealias: closureAlias){
+	closureAlias("Money baby")
+}
+
+aliasasparm{
+	(message) in 
+	print(message)
+}
